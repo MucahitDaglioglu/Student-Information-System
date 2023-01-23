@@ -21,6 +21,8 @@ Used Technologies:
 
 
 ** Admin Panel ** 
+
+|             |                   |
 | ----------- | ----------------- |
 | <img src="https://user-images.githubusercontent.com/79766537/214099719-df2f4681-cae8-4303-8b18-a75a5ceb8dc4.png" width="200">            | <img src="https://user-images.githubusercontent.com/79766537/214099895-b65564b5-d2cd-4ce8-a07e-931c419e56c1.png" width="200">                  |
 | Screen      | Screen            
