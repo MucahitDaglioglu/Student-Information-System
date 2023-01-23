@@ -1,2 +1,2 @@
-# Student-Information-System
+# Student Information System
 Mobile Programming Lesson Project
