@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <!-- android:id="@+id/addAnnouncementFragment"-->
+    <item
+        android:id="@+id/addAnnouncementFragment"
+        android:icon="@drawable/ic_announcement"
+        android:title="Duyuru Ekleme" />
+
+    <item
+        android:id="@+id/addLessonFragment"
+        android:icon="@drawable/ic_ebook"
+        android:title="Ders Ekleme" />
+
+    <item
+        android:id="@+id/addFoodListFragment"
+        android:icon="@drawable/ic_food_list"
+        android:title="Yemek Listesi Ekle" />
+
+    <item
+        android:id="@+id/userAuthenticationFragment"
+        android:icon="@drawable/ic_authentication"
+        android:title="Onay Bekleyen Kullanıcılar" />
+
+    <item
+        android:id="@+id/logoutAdmin"
+        android:icon="@drawable/ic_logout"
+        android:title="Çıkış" />
+
+
+</menu>

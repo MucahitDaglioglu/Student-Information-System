@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Atauni Obs</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="uni_name">Atatürk\nÜniversitesi</string>
+    <string name="login_tc_no">T.C. Kimlik Numaranız</string>
+    <string name="login_password">Şifreniz</string>
+    <string name="login">Giriş</string>
+
+
+    <string name="register">Kayıt Ol</string>
+    <string name="name_surname">Adınız Soyadınız</string>
+    <string name="mail_address">Mail Adresiniz</string>
+    <string name="degree">Unvanınız</string>
+    <string name="student">Öğrenci</string>
+    <string name="lecturer">Öğretim Üyesi/Görevlisi</string>
+    <string name="create_user">Kullanıcı Oluştur</string>
+
+
+    <string name="telephone_no">Telefon Numaranız</string>
+
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
+
+</resources>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "163833118032",
+    "project_id": "obsproject-8a6f8",
+    "storage_bucket": "obsproject-8a6f8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:163833118032:android:d7a7bafe1bb8bdf66f4055",
+        "android_client_info": {
+          "package_name": "com.mucahitdaglioglu.obsapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "163833118032-uanh40j02pjp8ioh4cd1ol84ch6v1k0c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCaP-M65tS6ftEunV-AEyZ-_VegfvF4IRU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "163833118032-uanh40j02pjp8ioh4cd1ol84ch6v1k0c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".admin.AdminFoodListFragment">
+
+    <TextView
+        android:id="@+id/textViewDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/space16"
+        android:layout_marginTop="@dimen/space24"
+        android:layout_marginEnd="@dimen/space16"
+        android:clickable="true"
+        android:text="13-12-2022"
+        android:textSize="@dimen/textSize20"
+        android:textStyle="bold"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutSoup"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/space32"
+        android:layout_marginTop="@dimen/space32"
+        android:layout_marginEnd="@dimen/space32"
+        android:hint="Çorba"
+        android:textColorHint="@color/my_btn_color"
+        app:hintTextColor="@color/my_btn_color"
+        app:boxStrokeColor="@color/my_btn_color"
+        app:boxStrokeWidth="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDate">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextSoup"
+            android:textSize="@dimen/textSize16"
+            android:inputType="text"
+            android:textCursorDrawable="@null"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutMainFood"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/space32"
+        android:layout_marginTop="@dimen/space16"
+        android:layout_marginEnd="@dimen/space32"
+        android:hint="Ana Yemek"
+        android:textColorHint="@color/my_btn_color"
+        app:boxStrokeColor="@color/my_btn_color"
+        app:boxStrokeWidth="1dp"
+        app:hintTextColor="@color/my_btn_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayoutSoup">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextMainFood"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/textSize16" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutOtherFood"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/space32"
+        android:layout_marginTop="@dimen/space16"
+        android:layout_marginEnd="@dimen/space32"
+        android:hint="Makarna/Börek"
+        android:textColorHint="@color/my_btn_color"
+        app:boxStrokeColor="@color/my_btn_color"
+        app:boxStrokeWidth="1dp"
+        app:hintTextColor="@color/my_btn_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayoutMainFood">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextOtherFood"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/textSize16" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutSweetAppetizer"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/space32"
+        android:layout_marginTop="@dimen/space16"
+        android:layout_marginEnd="@dimen/space32"
+        android:hint="Tatlı/Meze"
+        android:textColorHint="@color/my_btn_color"
+        app:boxStrokeColor="@color/my_btn_color"
+        app:boxStrokeWidth="1dp"
+        app:hintTextColor="@color/my_btn_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayoutOtherFood">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextSweetAppetizer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/textSize16" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnSendFood"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/space48"
+        android:layout_marginTop="@dimen/space32"
+        android:layout_marginEnd="@dimen/space48"
+        app:icon="@drawable/ic_food_list"
+        app:iconGravity="textStart"
+        app:iconSize="24dp"
+        app:iconTint="@color/white"
+        android:backgroundTint="@color/my_btn_color"
+        android:text="Yemek Ekle"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize18"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayoutSweetAppetizer" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

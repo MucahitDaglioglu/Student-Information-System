@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="@dimen/space5"
+    card_view:cardElevation="@dimen/space10"
+    card_view:cardCornerRadius="@dimen/space20">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:padding="@dimen/space8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageView"
+            android:layout_width="@dimen/iconSize60"
+            android:layout_height="@dimen/iconSize60"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/ic_lesson_point"
+            card_view:layout_constraintStart_toStartOf="parent"
+            card_view:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewLessonName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/space8"
+            android:layout_marginTop="@dimen/space8"
+            android:text="Lesson Name"
+            android:textSize="@dimen/textSize16"
+            card_view:layout_constraintStart_toEndOf="@+id/imageView"
+            card_view:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewLessonNote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/space8"
+            android:layout_marginTop="@dimen/space5"
+            android:text="Lesson Note"
+            android:textSize="@dimen/textSize16"
+            card_view:layout_constraintStart_toEndOf="@+id/imageView"
+            card_view:layout_constraintTop_toBottomOf="@+id/textViewLessonName" />
+
+        <TextView
+            android:id="@+id/textViewLessonLetterGrade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/space8"
+            android:layout_marginTop="@dimen/space5"
+            android:text="Lesson Letter Grade"
+            android:textSize="@dimen/textSize16"
+            card_view:layout_constraintStart_toEndOf="@+id/imageView"
+            card_view:layout_constraintTop_toBottomOf="@+id/textViewLessonNote" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>

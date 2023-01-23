@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".lecturer.LecturerAddNotesFragment">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="@dimen/space32"
+        android:src="@drawable/ic_lesson_point"
+        android:tint="@color/my_btn_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutLessonName"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/space32"
+        android:layout_marginTop="@dimen/space32"
+        android:layout_marginEnd="@dimen/space32"
+        android:hint="Ders adı"
+        android:textColorHint="@color/my_btn_color"
+        app:boxStrokeColor="@color/my_btn_color"
+        app:boxStrokeWidth="1dp"
+        app:hintTextColor="@color/my_btn_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextLessonName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/textSize16" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutStudentTCNo"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/space32"
+        android:layout_marginTop="@dimen/space16"
+        android:layout_marginEnd="@dimen/space32"
+        android:hint="Öğrenci TC No"
+        android:textColorHint="@color/my_btn_color"
+        app:boxStrokeColor="@color/my_btn_color"
+        app:boxStrokeWidth="1dp"
+        app:hintTextColor="@color/my_btn_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayoutLessonName">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextStudentTCNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/textSize16" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutStudentNote"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/space32"
+        android:layout_marginTop="@dimen/space16"
+        android:layout_marginEnd="@dimen/space32"
+        android:hint="Öğrencinin Notu"
+        android:textColorHint="@color/my_btn_color"
+        app:boxStrokeColor="@color/my_btn_color"
+        app:boxStrokeWidth="1dp"
+        app:hintTextColor="@color/my_btn_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayoutStudentTCNo">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextStudentNote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/textSize16" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnAddStudentNote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/space48"
+        android:layout_marginTop="@dimen/space32"
+        android:layout_marginEnd="@dimen/space48"
+        android:backgroundTint="@color/my_btn_color"
+        android:text="Notu Ekle"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize18"
+        app:icon="@drawable/ic_lesson_point"
+        app:iconGravity="textStart"
+        app:iconSize="24dp"
+        app:iconTint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayoutStudentNote" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnUpdateStudentNote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/space48"
+        android:layout_marginTop="@dimen/space8"
+        android:layout_marginEnd="@dimen/space48"
+        android:backgroundTint="@color/my_btn_color"
+        android:text="Notu Güncelle"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize18"
+        app:icon="@drawable/ic_lesson_point"
+        app:iconGravity="textStart"
+        app:iconSize="24dp"
+        app:iconTint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAddStudentNote" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

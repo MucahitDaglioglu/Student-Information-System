@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/announcementLecturer"
+        android:icon="@drawable/ic_announcement"
+        android:title="Duyurular" />
+
+    <item
+        android:id="@+id/listingLesson"
+        android:icon="@drawable/ic_lesson_list"
+        android:title="Dersleri Listele" />
+
+    <item
+        android:id="@+id/addLecturesNotes"
+        android:icon="@drawable/ic_lesson_point"
+        android:title="Not Ekle" />
+
+    <item
+        android:id="@+id/logoutLecturer"
+        android:icon="@drawable/ic_logout"
+        android:title="Logout" />
+
+</menu>

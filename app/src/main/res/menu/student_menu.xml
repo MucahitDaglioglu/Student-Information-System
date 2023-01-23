@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/announcements"
+        android:icon="@drawable/ic_announcement"
+        android:title="Duyurular" />
+
+    <item
+        android:id="@+id/lessonList"
+        android:icon="@drawable/ic_lesson_list"
+        android:title="Ders Listesi" />
+
+    <item
+        android:id="@+id/noteList"
+        android:icon="@drawable/ic_lesson_point"
+        android:title="Notlar" />
+
+    <item
+        android:id="@+id/foodList"
+        android:icon="@drawable/ic_food_list"
+        android:title="Yemek Listesi" />
+
+    <item
+        android:id="@+id/logoutStudent"
+        android:icon="@drawable/ic_logout"
+        android:title="Çıkış" />
+
+</menu>

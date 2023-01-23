@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".admin.AdminHomeFragment">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="192dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/atauni_logo" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Hayatın Hizmetinde, Hep İleriye..."
+        android:textSize="@dimen/textSize20"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnAddAnnouncement"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="@dimen/space16"
+        android:layout_marginTop="@dimen/space28"
+        android:backgroundTint="@color/my_btn_color"
+        android:text="Duyuru Ekle"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize18"
+        app:icon="@drawable/ic_announcement"
+        app:iconGravity="textTop"
+        app:iconSize="24dp"
+        app:iconTint="@color/white"
+        app:layout_constraintEnd_toStartOf="@+id/btnAddLesson"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnAddLesson"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="@dimen/space28"
+        android:layout_marginEnd="@dimen/space16"
+        android:backgroundTint="@color/my_btn_color"
+        android:text="Ders Ekle"
+        app:icon="@drawable/ic_ebook"
+        app:iconGravity="textTop"
+        app:iconSize="24dp"
+        app:iconTint="@color/white"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize18"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnAddAnnouncement"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnAddFoodList"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="@dimen/space16"
+        android:layout_marginTop="@dimen/space8"
+        android:backgroundTint="@color/my_btn_color"
+        android:text="Yemek Listesi Ekle"
+        android:textAllCaps="false"
+        app:iconGravity="textTop"
+        app:iconSize="24dp"
+        app:icon="@drawable/ic_food_list"
+        app:iconTint="@color/white"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize18"
+        app:layout_constraintEnd_toStartOf="@+id/btnUserAuthentication"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAddAnnouncement" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnUserAuthentication"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="@dimen/space8"
+        android:layout_marginEnd="@dimen/space16"
+        android:backgroundTint="@color/my_btn_color"
+        app:icon="@drawable/ic_authentication"
+        app:iconGravity="textTop"
+        app:iconSize="24dp"
+        app:iconTint="@color/white"
+        android:text="Kullanıcı Onay"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize18"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnAddFoodList"
+        app:layout_constraintTop_toBottomOf="@+id/btnAddLesson" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

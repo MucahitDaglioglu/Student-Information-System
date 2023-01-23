@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_obs"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.mucahitdaglioglu.obsapp.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_adminHomeFragment"
+            app:destination="@id/adminHomeFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_studentHomeFragment"
+            app:destination="@id/studentHomeFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_lecturerHomeFragment"
+            app:destination="@id/lecturerHomeFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.mucahitdaglioglu.obsapp.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" />
+    <fragment
+        android:id="@+id/adminHomeFragment"
+        android:name="com.mucahitdaglioglu.obsapp.admin.AdminHomeFragment"
+        android:label="fragment_admin_home"
+        tools:layout="@layout/fragment_admin_home" >
+        <action
+            android:id="@+id/action_adminHomeFragment_to_adminAnnouncementFragment"
+            app:destination="@id/adminAnnouncementFragment" />
+        <action
+            android:id="@+id/action_adminHomeFragment_to_adminLessonFragment"
+            app:destination="@id/adminLessonFragment" />
+        <action
+            android:id="@+id/action_adminHomeFragment_to_adminFoodListFragment"
+            app:destination="@id/adminFoodListFragment" />
+        <action
+            android:id="@+id/action_adminHomeFragment_to_adminUserAuthenticationFragment"
+            app:destination="@id/adminUserAuthenticationFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/adminAnnouncementFragment"
+        android:name="com.mucahitdaglioglu.obsapp.admin.AdminAnnouncementFragment"
+        android:label="fragment_admin_announcement"
+        tools:layout="@layout/fragment_admin_announcement" >
+        <action
+            android:id="@+id/action_adminAnnouncementFragment_to_adminLessonFragment"
+            app:destination="@id/adminLessonFragment" />
+        <action
+            android:id="@+id/action_adminAnnouncementFragment_to_adminUserAuthenticationFragment"
+            app:destination="@id/adminUserAuthenticationFragment" />
+        <action
+            android:id="@+id/action_adminAnnouncementFragment_to_adminFoodListFragment"
+            app:destination="@id/adminFoodListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/adminLessonFragment"
+        android:name="com.mucahitdaglioglu.obsapp.admin.AdminLessonFragment"
+        android:label="fragment_admin_lesson"
+        tools:layout="@layout/fragment_admin_lesson" >
+        <action
+            android:id="@+id/action_adminLessonFragment_to_adminAnnouncementFragment"
+            app:destination="@id/adminAnnouncementFragment" />
+        <action
+            android:id="@+id/action_adminLessonFragment_to_adminFoodListFragment"
+            app:destination="@id/adminFoodListFragment" />
+        <action
+            android:id="@+id/action_adminLessonFragment_to_adminUserAuthenticationFragment"
+            app:destination="@id/adminUserAuthenticationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/adminFoodListFragment"
+        android:name="com.mucahitdaglioglu.obsapp.admin.AdminFoodListFragment"
+        android:label="fragment_admin_food_list"
+        tools:layout="@layout/fragment_admin_food_list" >
+
+        <action
+            android:id="@+id/action_adminFoodListFragment_to_adminAnnouncementFragment"
+            app:destination="@id/adminAnnouncementFragment" />
+        <action
+            android:id="@+id/action_adminFoodListFragment_to_adminLessonFragment"
+            app:destination="@id/adminLessonFragment" />
+        <action
+            android:id="@+id/action_adminFoodListFragment_to_adminUserAuthenticationFragment"
+            app:destination="@id/adminUserAuthenticationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/adminUserAuthenticationFragment"
+        android:name="com.mucahitdaglioglu.obsapp.admin.AdminUserAuthenticationFragment"
+        android:label="fragment_admin_user_authentication"
+        tools:layout="@layout/fragment_admin_user_authentication" >
+
+        <action
+            android:id="@+id/action_adminUserAuthenticationFragment_to_adminFoodListFragment"
+            app:destination="@id/adminFoodListFragment" />
+        <action
+            android:id="@+id/action_adminUserAuthenticationFragment_to_adminLessonFragment"
+            app:destination="@id/adminLessonFragment" />
+        <action
+            android:id="@+id/action_adminUserAuthenticationFragment_to_adminAnnouncementFragment"
+            app:destination="@id/adminAnnouncementFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/studentHomeFragment"
+        android:name="com.mucahitdaglioglu.obsapp.student.StudentHomeFragment"
+        android:label="fragment_student_home"
+        tools:layout="@layout/fragment_student_home" >
+        <argument
+            android:name="user"
+            app:argType="com.mucahitdaglioglu.obsapp.users" />
+        <action
+            android:id="@+id/action_studentHomeFragment_to_studentFoodListFragment"
+            app:destination="@id/studentFoodListFragment" />
+        <action
+            android:id="@+id/action_studentHomeFragment_to_studentLessonListFragment"
+            app:destination="@id/studentLessonListFragment" />
+        <action
+            android:id="@+id/action_studentHomeFragment_to_studentNoteListFragment"
+            app:destination="@id/studentNoteListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/lecturerHomeFragment"
+        android:name="com.mucahitdaglioglu.obsapp.lecturer.LecturerHomeFragment"
+        android:label="fragment_lecturer_home"
+        tools:layout="@layout/fragment_lecturer_home" >
+        <argument
+            android:name="user"
+            app:argType="com.mucahitdaglioglu.obsapp.users" />
+        <action
+            android:id="@+id/action_lecturerHomeFragment_to_lecturerAddNotesFragment"
+            app:destination="@id/lecturerAddNotesFragment" />
+        <action
+            android:id="@+id/action_lecturerHomeFragment_to_lecturerLessonListFragment"
+            app:destination="@id/lecturerLessonListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/studentFoodListFragment"
+        android:name="com.mucahitdaglioglu.obsapp.student.StudentFoodListFragment"
+        android:label="fragment_student_food_list"
+        tools:layout="@layout/fragment_student_food_list" >
+        <argument
+            android:name="user"
+            app:argType="com.mucahitdaglioglu.obsapp.users" />
+        <action
+            android:id="@+id/action_studentFoodListFragment_to_studentNoteListFragment"
+            app:destination="@id/studentNoteListFragment" />
+        <action
+            android:id="@+id/action_studentFoodListFragment_to_studentLessonListFragment"
+            app:destination="@id/studentLessonListFragment" />
+        <action
+            android:id="@+id/action_studentFoodListFragment_to_studentHomeFragment"
+            app:destination="@id/studentHomeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/studentLessonListFragment"
+        android:name="com.mucahitdaglioglu.obsapp.student.StudentLessonListFragment"
+        android:label="fragment_student_lesson_list"
+        tools:layout="@layout/fragment_student_lesson_list" >
+        <argument
+            android:name="user"
+            app:argType="com.mucahitdaglioglu.obsapp.users" />
+        <action
+            android:id="@+id/action_studentLessonListFragment_to_studentNoteListFragment"
+            app:destination="@id/studentNoteListFragment" />
+        <action
+            android:id="@+id/action_studentLessonListFragment_to_studentFoodListFragment"
+            app:destination="@id/studentFoodListFragment" />
+        <action
+            android:id="@+id/action_studentLessonListFragment_to_studentHomeFragment"
+            app:destination="@id/studentHomeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/studentNoteListFragment"
+        android:name="com.mucahitdaglioglu.obsapp.student.StudentNoteListFragment"
+        android:label="fragment_student_note_list"
+        tools:layout="@layout/fragment_student_note_list" >
+        <argument
+            android:name="user"
+            app:argType="com.mucahitdaglioglu.obsapp.users" />
+        <action
+            android:id="@+id/action_studentNoteListFragment_to_studentFoodListFragment"
+            app:destination="@id/studentFoodListFragment" />
+        <action
+            android:id="@+id/action_studentNoteListFragment_to_studentLessonListFragment"
+            app:destination="@id/studentLessonListFragment" />
+        <action
+            android:id="@+id/action_studentNoteListFragment_to_studentHomeFragment"
+            app:destination="@id/studentHomeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/lecturerAddNotesFragment"
+        android:name="com.mucahitdaglioglu.obsapp.lecturer.LecturerAddNotesFragment"
+        android:label="fragment_lecturer_add_notes"
+        tools:layout="@layout/fragment_lecturer_add_notes" >
+        <argument
+            android:name="user"
+            app:argType="com.mucahitdaglioglu.obsapp.users" />
+        <action
+            android:id="@+id/action_lecturerAddNotesFragment_to_lecturerLessonListFragment"
+            app:destination="@id/lecturerLessonListFragment" />
+        <action
+            android:id="@+id/action_lecturerAddNotesFragment_to_lecturerHomeFragment"
+            app:destination="@id/lecturerHomeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/lecturerLessonListFragment"
+        android:name="com.mucahitdaglioglu.obsapp.lecturer.LecturerLessonListFragment"
+        android:label="fragment_lecturer_lesson_list"
+        tools:layout="@layout/fragment_lecturer_lesson_list" >
+        <argument
+            android:name="user"
+            app:argType="com.mucahitdaglioglu.obsapp.users" />
+        <action
+            android:id="@+id/action_lecturerLessonListFragment_to_lecturerAddNotesFragment"
+            app:destination="@id/lecturerAddNotesFragment" />
+        <action
+            android:id="@+id/action_lecturerLessonListFragment_to_lecturerHomeFragment"
+            app:destination="@id/lecturerHomeFragment" />
+    </fragment>
+
+
+</navigation>

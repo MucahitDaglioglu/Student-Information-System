@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:id="@+id/cardViewStudentRecyclerViewFoodList"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="@dimen/space5"
+    card_view:cardElevation="@dimen/space10"
+    card_view:cardCornerRadius="@dimen/space20">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:padding="@dimen/space8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/appCompatImageView"
+            android:layout_width="@dimen/iconSize48"
+            android:layout_height="@dimen/iconSize48"
+            android:layout_marginStart="@dimen/space16"
+            android:tint="@color/my_btn_color"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_food_list"
+            card_view:layout_constraintBottom_toBottomOf="parent"
+            card_view:layout_constraintStart_toStartOf="parent"
+            card_view:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewStudentRecyclerViewDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/space16"
+            android:maxLines="3"
+            android:text="Date"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textSize16"
+            card_view:layout_constraintBottom_toBottomOf="parent"
+            card_view:layout_constraintStart_toEndOf="@+id/appCompatImageView"
+            card_view:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>
