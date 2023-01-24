@@ -20,6 +20,7 @@ Used Technologies:
 
 
 
+
 ## Admin Panel
 
 |                   |                   |                   |                   |
@@ -29,12 +30,14 @@ Used Technologies:
 
 
 
+
 ## Lecturer Panel
 
 |                   |                   |                   |                   |
 | ----------------- | ----------------- | ----------------- | ----------------- |
 | <img src="https://user-images.githubusercontent.com/79766537/214250469-8e491a1c-6090-4fc8-8d70-a7052a0b5be5.png" width="200"> | <img src="https://user-images.githubusercontent.com/79766537/214250483-28280d34-baa2-4f63-8add-ef971988fac1.png" width="200"> | <img src="https://user-images.githubusercontent.com/79766537/214250501-f07d89f3-37a8-4c1c-a902-c9320b876f0a.png" width="200"> | <img src="https://user-images.githubusercontent.com/79766537/214250530-c9ed6e80-d13d-457b-9baa-d24e72b4d202.png" width="200"> 
 | <img src="https://user-images.githubusercontent.com/79766537/214250546-c3e7b12f-0a5f-4334-a2b0-965ab97e2c10.png" width="200"> 
+
 
 
 
