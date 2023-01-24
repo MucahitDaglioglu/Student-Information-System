@@ -28,6 +28,20 @@ Used Technologies:
 | <img src="https://user-images.githubusercontent.com/79766537/214100504-97cdba04-82ff-43a3-bef1-16a87de6eef7.png" width="200"> | <img src="https://user-images.githubusercontent.com/79766537/214100525-fc5c9432-b7c2-4821-8824-d5509eb96106.png" width="200"> | <img src="https://user-images.githubusercontent.com/79766537/214100534-fe6b0389-314e-4ac5-b2fd-cfd1459322a7.png" width="200">
 
 
+## Lecturer Panel
+|                   |                   |                   |                   |
+| ----------------- | ----------------- | ----------------- | ----------------- |
+| <img src="https://user-images.githubusercontent.com/79766537/214250469-8e491a1c-6090-4fc8-8d70-a7052a0b5be5.png" width="200"> | <img src="https://user-images.githubusercontent.com/79766537/214250483-28280d34-baa2-4f63-8add-ef971988fac1.png" width="200"> | <img src="https://user-images.githubusercontent.com/79766537/214250501-f07d89f3-37a8-4c1c-a902-c9320b876f0a.png" width="200"> | <img src="https://user-images.githubusercontent.com/79766537/214250530-c9ed6e80-d13d-457b-9baa-d24e72b4d202.png" width="200"> 
+| <img src="https://user-images.githubusercontent.com/79766537/214250546-c3e7b12f-0a5f-4334-a2b0-965ab97e2c10.png" width="200"> | <img src="" width="200"> | <img src="" width="200">
+
+
+
+
+
+
+
+
+## Student Panel
 
 
 
